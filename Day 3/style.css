@@ -1,0 +1,143 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #dadada;
+    scroll-behavior: smooth;
+}
+
+.content {
+    height: 100vh;
+    background: url("img/1.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar  {
+    
+}
+
+.datacontent {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: rgba(255,255,255,0.7);
+    row-gap: 25px;
+}
+
+.datacontent .heading {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.datacontent .sub-heading {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.datacontent .announcement {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.datacontent .countdown {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
+    column-gap: 10px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.datacontent .countdown div {
+    display: inline-block;
+    width: 130px;
+    height: 115px;
+    background-color: rgba(255,255,255,0.25);
+    border: 1px solid rgba(255,255,255,.5);
+}
+
+.datacontent .countdown div h4 {
+    font-size: 100px;
+    text-align: center;
+}
+
+.datacontent .botom {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.datacontent .social {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.datacontent .social  > button{
+    margin: 10px;
+}
+
+.datacontent .anime {
+    display: flex;
+    justify-content: center;
+}
+.datacontent .anime a{
+    /* transition-delay: 1s; */
+    transition: all 0.5s ease;
+}
+
+.card {
+    background-color: #dddddd;
+}
+
+.textcontent {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+.textcontent hr {
+    width: 20%;
+    margin: auto;
+}
+
+.service {
+    text-align: center;
+}
+
+.textcontent .service .list {
+    display: inline-grid;
+    width: 100%;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fix,minmax(200px,1fr)); */
+}
+
+/* .textcontent .service .list .card{
+    width: 180px;
+} */
+
+
+.textcontent .about {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.textcontent .about .list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fix,minmax(300px,1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.textcontent .contact {
+    text-align: center;
+}
+.textcontent .details {
+    float: left;
+}
