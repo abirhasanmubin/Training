@@ -15,30 +15,24 @@ html, body {
     background-size: cover;
 }
 
-.navbar  {
-    
-}
-
 .datacontent {
     display: grid;
     grid-template-columns: 1fr;
     color: rgba(255,255,255,0.7);
     row-gap: 25px;
+    padding: 5px;
 }
 
 .datacontent .heading {
-    /* font-size: 2rem; */
-    text-align: center;
+    justify-self: center;
 }
 
 .datacontent .sub-heading {
-    /* font-size: 1rem; */
-    text-align: center;
+    justify-self: center;
 }
 
 .datacontent .announcement {
-    /* font-size: 1rem; */
-    text-align: center;
+    justify-self: center;
 }
 
 .datacontent .countdown {
@@ -46,21 +40,12 @@ html, body {
     justify-content: center;
     column-gap: 10px;
     row-gap: 10px;
-    /* place-items: center; */
-    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-    /* grid-template-columns: 150px 150px 150px 150px; */
 }
 
 .datacontent .countdown div {
     display: grid;
     justify-items: center;
     align-items: center;
-    /* width: 130px;
-    height: 115px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
-    background-color: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,.1); */
 }
 
 .datacontent .countdown div h1 {
@@ -69,15 +54,11 @@ html, body {
 }
 
 .datacontent .countdown div p {
-    /* font-size: 60px; */
-    /* text-align: center; */
     text-align: justify;
-    /* padding: 20px; */
 }
 
 .datacontent .botom {
     display: flex;
-    /* grid-template-columns: 1fr 1fr; */
     column-gap: 10px;
     justify-content: center;
 }
@@ -98,12 +79,48 @@ html, body {
     justify-content: center;
 }
 .datacontent .anime a{
-    /* transition-delay: 1s; */
     transition: all 0.5s ease;
 }
 
-.card {
-    background-color: #dddddd;
+@media only screen and (max-height: 550px) {
+    .datacontent {
+        row-gap: 0px;
+    }
+    .datacontent .heading h1{
+        font-size: 20px;
+    }
+
+    .datacontent .sub-heading h6{
+        font-size: 10px;
+    }
+
+    .datacontent .announcement h3{
+        font-size: 15px;
+    }
+
+    .datacontent .countdown {
+        column-gap: 5px;
+    }
+
+    .datacontent .countdown div h1 {
+        font-size: 25px;
+    }
+
+    .datacontent .countdown div p {
+        font-size: 10px;
+    }
+
+    .datacontent .botom .btn {
+        line-height: 1.0;
+    }
+
+    .datacontent .social a {
+        padding: 5px;
+        color: white;
+    }
+    .datacontent .anime .btn {
+        line-height: 1.0;
+    }
 }
 
 .textcontent {
@@ -113,12 +130,16 @@ html, body {
     padding: 20px;
 }
 
+.textcontent .card {
+    background-color: #dddddd;
+}
+
 .textcontent hr {
     width: 20%;
     margin: auto;
 }
 
-.service {
+.textcontent .service {
     text-align: center;
 }
 
@@ -128,7 +149,6 @@ html, body {
     column-gap: 20px;
     row-gap: 20px;
     justify-content: center;
-    /* grid-template-columns: ; */
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
     column-gap: 20px;
     row-gap: 20px;
@@ -179,3 +199,4 @@ html, body {
 .textcontent .details {
     text-align: justify;
 }
+
