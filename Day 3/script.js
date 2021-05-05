@@ -3,7 +3,7 @@ let hour = document.querySelector("#hour")
 let minute = document.querySelector("#minute")
 let second = document.querySelector("#second")
 
-let goalTime = new Date("May 5, 2021 17:30:00").getTime();
+let goalTime = new Date("May 6, 2021 17:30:00").getTime();
 
 function strfy(num) {
     if (num < 10) return '0' + num;
