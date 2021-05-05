@@ -7,6 +7,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
+
 .content {
     height: 100vh;
     background: url("img/1.jpg") no-repeat center center fixed;
@@ -25,39 +26,48 @@ html, body {
 }
 
 .datacontent .heading {
-    font-size: 2.5em;
+    /* font-size: 2rem; */
     text-align: center;
 }
 
 .datacontent .sub-heading {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     text-align: center;
 }
 
 .datacontent .announcement {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     text-align: center;
 }
 
 .datacontent .countdown {
-    display: grid;
-    grid-template-columns: 150px 150px 150px 150px;
-    /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
-    column-gap: 10px;
+    display: flex;
     justify-content: center;
-    /* align-items: center; */
+    column-gap: 10px;
+    /* place-items: center; */
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    /* grid-template-columns: 150px 150px 150px 150px; */
 }
 
 .datacontent .countdown div {
-    display: inline-block;
-    width: 130px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    /* width: 130px;
     height: 115px;
-    background-color: rgba(255,255,255,0.25);
-    border: 1px solid rgba(255,255,255,.5);
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,.1); */
 }
 
 .datacontent .countdown div h4 {
     font-size: 100px;
+    text-align: center;
+}
+
+.datacontent .countdown div h6 {
+    /* font-size: 60px; */
     text-align: center;
 }
 
@@ -139,5 +149,5 @@ html, body {
     text-align: center;
 }
 .textcontent .details {
-    float: left;
+    text-align: justify;
 }
