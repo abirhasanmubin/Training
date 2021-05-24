@@ -1,0 +1,12 @@
+<p>trips works!</p>
+<div class="conntainer">
+  <div class="row">
+    <div class="col md-4">
+      <app-trip-list></app-trip-list>
+      <a [routerLink]="['/trips/detail']">Trip Deta</a>
+    </div>
+    <div class="col-md-8">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
