@@ -1,1 +1,21 @@
-<p>profile-edit works!</p>
+<form class="example-form" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input type="text" matInput placeholder="You Name: ex. Boltu" formControlName="name">
+    <mat-error>Name Invalid</mat-error>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput placeholder="location: ex .Sylhet" formControlName="email">
+    <mat-error>Location Invalid</mat-error>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Contact</mat-label>
+    <input type="text" matInput placeholder="Mobile 01*********" formControlName="contact">
+    <mat-error>Contact Invalid</mat-error>
+  </mat-form-field>
+  <mat-divider></mat-divider>
+  <button mat-stroked-button [disabled]="!profileForm.valid" color="primary" type="submit">
+    Update Profile
+  </button>
+</form>

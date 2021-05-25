@@ -1,1 +1,11 @@
-<p>trip-list works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <button [routerLink]="['/trips','new']" class="btn btn-success">New Recipe</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-trip-item *ngFor="let trip of trips; let i = index" [trip]='trip' [index]='i'></app-trip-item>
+  </div>
+</div>

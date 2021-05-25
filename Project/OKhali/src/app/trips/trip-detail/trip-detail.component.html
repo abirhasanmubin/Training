@@ -1,1 +1,49 @@
-<p>trip-detail works!</p>
+<div class="container">
+  <div class="row" *ngIf="trip.isIssuedByDriver">
+    <div class="col-xs-12">
+      <button class="btn btn-success">Request for Customer</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>Trip Id: {{id}}</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h6>Form: {{trip.fromLocation}}</h6>
+    </div>
+    <div class="col-md-6">
+      <h6>Form: {{trip.toDestination}}</h6>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <p>Trip Date: {{trip.journeyDate | date:'fullDate'}} </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <p>Status: <strong id="statusId">{{trip.tripStatus | uppercase}}</strong> </p>
+    </div>
+  </div>
+  <div class="row" *ngIf="trip.isIssuedByDriver">
+    <div class="col-xs-12">
+      <p>Trips: <strong id="statusId">{{trip.userTrips}}</strong> </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <p>Have to add property: is approved is completed</p>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="!trip.isIssuedByDriver">
+    <div class="colxs-12">
+      Will be a card
+      Driver info <button class="btn btn-primary">Approve Driver</button>
+    </div>
+  </div>
+
+</div>

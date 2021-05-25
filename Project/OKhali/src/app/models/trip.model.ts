@@ -1,6 +1,5 @@
 export class Trip {
   constructor(
-    public tripId: string,
     public fromLocation: string,
     public toDestination: string,
     public journeyDate: Date,

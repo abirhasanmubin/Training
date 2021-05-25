@@ -1,1 +1,11 @@
-<p>trip-item works!</p>
+<ul class="list-group">
+  <li class="list-group-item">
+    <a [routerLink]="[index]" style="text-decoration: none;">
+      <h6 class="list-group-item-heading"><span>TripId: </span>{{index}}</h6>
+      <p class="list-group-item-text"><span>From: </span>{{trip.fromLocation}}</p>
+      <p class="list-group-item-text"><span>To: </span>{{trip.toDestination}}</p>
+      <p class="list-group-item-text"><span>Date: </span>{{trip.journeyDate | date}}</p>
+      <p class="list-group-item-text"><span>Status: </span>{{trip.tripStatus | lowercase}}</p>
+    </a>
+  </li>
+</ul>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Trip } from 'src/app/models/trip.model';
+import { TripService } from 'src/app/services/trip.service';
 
 @Component({
   selector: 'app-trip-list',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TripListComponent implements OnInit {
 
-  constructor() { }
+  trips: Trip[] = [];
+
+  constructor(
+    private tripService: TripService,
+  ) { }
 
   ngOnInit(): void {
+    this.trips = this.tripService.getTrips();
   }
 
 }
