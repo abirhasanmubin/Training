@@ -1,10 +1,24 @@
-<div class="row">
-  <div class="col-md-12">
-    <h6 align-items-center>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi non perspiciatis adipisci
-      exercitationem cupiditate dolorem, similique nihil totam asperiores quas, facilis distinctio nisi nemo numquam
-      est quaerat iure tempora.
-    </h6>
-    <button [routerLink]="['/user','new']" class="btn btn-lg btn-info">Signup/Login</button>
-  </div>
-</div>
+<mat-grid-list cols="1">
+  <!-- <mat-grid-tile> -->
+  <mat-card>
+    <mat-card-title-group style="justify-content: center;">
+      <mat-card-title>Hello World</mat-card-title>
+      <!-- <mat-card-subtitle>Bye WWorld</mat-card-subtitle> -->
+    </mat-card-title-group>
+    <mat-card-content style="text-align: justify;">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed impedit inventore amet id provident. Dignissimos
+        vitae perferendis molestiae provident, consequatur officiis optio ullam nobis fugiat explicabo modi aliquam
+        dolor dicta nostrum vero blanditiis nesciunt nihil natus incidunt labore tempora! Rerum quasi laudantium
+        ipsam, consequuntur incidunt eveniet illum nobis perspiciatis, veritatis voluptas iure similique optio
+        dolorem, adipisci corrupti molestiae animi velit quibusdam? Saepe nam, ullam excepturi, eveniet ipsum
+        doloremque eius sint reiciendis atque, explicabo magnam tenetur error autem? Quo numquam laboriosam hic autem
+        architecto ea similique voluptates, repudiandae veritatis saepe incidunt, sunt sequi modi excepturi expedita
+        eligendi error deleniti eveniet voluptatem!</p>
+    </mat-card-content>
+    <mat-card-actions style="text-align: center;">
+      <button mat-stroked-button [routerLink]="['/user','new']">Signup</button>
+      <button mat-stroked-button [routerLink]="['/user','login']">Login</button>
+    </mat-card-actions>
+  </mat-card>
+  <!-- </mat-grid-tile> -->
+</mat-grid-list>

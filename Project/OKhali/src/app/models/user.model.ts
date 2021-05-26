@@ -12,8 +12,7 @@ export class User {
     public review: number,
     public reviewedBy: number,
     public isDriver: boolean,
-    public vehicle: Vehicle[],
-    public trips: Trip[]
+    public vehicle: Vehicle[]
   ) { }
 
   get Token() {
